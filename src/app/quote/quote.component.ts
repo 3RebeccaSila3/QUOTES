@@ -18,6 +18,13 @@ export class QuoteComponent implements OnInit {
     new Quote(5, 'Friends are like rainbows always there to cheer you up after the storm', 'Charles Chaplin Jade', new Date(2018,8,6)),
  ]
 
+ addNewQuote(quote){
+   let quoteLength = this.quotes.length;
+   quote.id=quoteLength+1;
+   quote.completeDate = new Date(quote.completeDate)
+   this.quotes.push(quote)
+ }
+
  completeQuote(isComplete,index){
   if (isComplete) {
     this.quotes.splice(index,1);
