@@ -16,6 +16,10 @@ export class QuoteComponent implements OnInit {
     new Quote(4, 'If it does not challenge you,it does not change you', 'Adewaje Frank Robert',),
     new Quote(5, 'Friends are like rainbows always there to cheer you up after the storm', 'Charles Chaplin Jade',),
  ]
+
+ toogleDetails(index) {
+   this.quotes[index].showDescription = !this.quotes[index].showDescription;
+ }
   constructor() { }
 
   ngOnInit() {

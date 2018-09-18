@@ -4,9 +4,11 @@
       <h1 style="text-align:center" class="badge badge-pill badge-info">Welcome to {{ title }}!</h1>
 
       <ul>
-          <div *ngFor='let quote of quotes'>
+          <div *ngFor='let quote of quotes;let i = index'>
             <li>{{quote.name}}</li> <br>
-            <app-quote-details [quote]='quote'></app-quote-details>
+            <button  class="btn btn-warning" (click)='toogleDetails(i)'>Quote Details</button>
+
+            <app-quote-details *ngIf="quote.showDescription" [quote]='quote'></app-quote-details>
           </div>  
       </ul>
     </div>
