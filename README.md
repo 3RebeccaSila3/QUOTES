@@ -32,7 +32,7 @@ this is a Quotes project that allows the user to  create quotes,delete them and 
 
 ## Sample application
 
-![screenshot](http:///src/assets/screenshot.png)
+![screenshot](http:///home/moringa/Desktop/Quotes/src/assets/screenshot.png)
 
 ## Pupose
 
