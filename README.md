@@ -33,7 +33,7 @@ this is a Quotes project that allows the user to  create quotes,delete them and 
 ## Sample application
 
 <p align="center">
-  <img src="/assets/screenshot.png" width="350" title="hover text">
+  <img src="/assets/screenshot.png" width="350">
 </p>
 
 ## Pupose
