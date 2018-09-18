@@ -32,7 +32,7 @@ this is a Quotes project that allows the user to  create quotes,delete them and 
 
 ## Sample application
 
-![alt text](http:///assets/Screenshot from 2018-09-18 15-45-58.png)
+![screenshot](http://assets/screenshot.png)
 
 ## Pupose
 
