@@ -1,3 +1,13 @@
 <p>{{quote.description}}</p>
 <p>This quote was created {{quote.completeDate|dateCount}} days ago </p>
 <button class="btn btn-danger" (click)='quoteComplete(true)'>Delete Quote</button>
+
+<p>
+        <span style="font-size: 1.2em; color: blue;" (click)="upVote()">
+          <i>up-vote</i>
+        </span> {{uvotes}}
+        <br>
+        <span style="color: red; font-size: 1.2em;" (click)="downVote()">
+          <i>down-vote</i>
+        </span>
+        {{dvotes}}
