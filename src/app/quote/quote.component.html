@@ -1,15 +1,17 @@
 <div class="container">
-   <div class="col-md-6">
-      <div class = "jumbotron"> 
-
-          <ul>
-              <div *ngFor='let quote of quotes;let i = index'>
-                <li id="{{i}}"  [appHighlight]="color">{{quote.name}} was created {{quote.completeDate|date|uppercase }} </li>
-                <button  class="btn btn-warning" (click)='toogleDetails(i)'>Quote Details</button>
+  <div class="row">
+      <div class="col-md-6">
+          <div class = "jumbotron"> 
     
-                <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event, i)' ></app-quote-details>
-              </div>  
-          </ul>
-        </div>
-   </div>
+              <ul>
+                  <div *ngFor='let quote of quotes;let i = index'>
+                    <li id="{{i}}"  [appHighlight]="color">{{quote.name}} was created {{quote.completeDate|date|uppercase }} </li>
+                    <button  class="btn btn-warning" (click)='toogleDetails(i)'>Quote Details</button>
+        
+                    <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event, i)' ></app-quote-details>
+                  </div>  
+              </ul>
+            </div>
+       </div>
+  </div>
 </div>
