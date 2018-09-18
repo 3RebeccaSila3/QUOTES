@@ -17,6 +17,12 @@ export class QuoteComponent implements OnInit {
     new Quote(5, 'Friends are like rainbows always there to cheer you up after the storm', 'Charles Chaplin Jade',),
  ]
 
+ completeQuote(isComplete,index){
+  if (isComplete) {
+    this.quotes.splice(index,1);
+  }
+}
+
  toogleDetails(index) {
    this.quotes[index].showDescription = !this.quotes[index].showDescription;
  }

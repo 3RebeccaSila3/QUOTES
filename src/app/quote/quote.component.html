@@ -8,7 +8,7 @@
             <li>{{quote.name}}</li> <br>
             <button  class="btn btn-warning" (click)='toogleDetails(i)'>Quote Details</button>
 
-            <app-quote-details *ngIf="quote.showDescription" [quote]='quote'></app-quote-details>
+            <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event, i)' ></app-quote-details>
           </div>  
       </ul>
     </div>
