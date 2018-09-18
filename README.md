@@ -30,11 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 this is a Quotes project that allows the user to  create quotes,delete them and stage them out to be voted for.
 
-## Sample application
-
-<p align="center">
-  <img src="/assets/screenshot.png" width="350">
-</p>
 
 ## Pupose
 
