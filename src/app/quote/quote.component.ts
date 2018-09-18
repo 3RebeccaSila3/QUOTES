@@ -7,7 +7,8 @@ import { Quote } from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  title = 'Quotes'; 
+  title = 'Quotes';
+  color = 'yellow'; 
 
   quotes = [
     new Quote(1, 'Life is way too short for bad vibes', 'Anonymous Rebecca Sila',),
