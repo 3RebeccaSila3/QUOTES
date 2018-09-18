@@ -9,7 +9,7 @@
 
           <ul>
               <div *ngFor='let quote of quotes;let i = index'>
-                <li [appHighlight]="color">{{quote.name}}</li>
+                <li id="{{i}}"  [appHighlight]="color">{{quote.name}} was created {{quote.completeDate|date|uppercase }} </li>
                 <button  class="btn btn-warning" (click)='toogleDetails(i)'>Quote Details</button>
     
                 <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event, i)' ></app-quote-details>
