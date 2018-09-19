@@ -45,3 +45,12 @@ You need to install
     -npm install -g typescript  (install typescript)
 
 Then run ng new Quotes
+
+## Link
+
+ghpages link
+https://3rebeccasila3.github.io/Quotes/
+
+## license
+
+MIT License
